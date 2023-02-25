@@ -34,6 +34,7 @@ const Profile = () => {
 
     await axios.put(`/api/users/${userDetail.user.id}`, user);
     setLoading(false);
+    setUpdatePassword("");
     setMessage("User Updated Successfully");
     setShowToast(true);
   };
@@ -212,6 +213,7 @@ const Profile = () => {
                           id={book.id}
                           title={book.title}
                           author={book.author}
+                          img={book.image_path}
                         />
                       );
                     })
