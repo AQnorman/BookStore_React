@@ -1,0 +1,25 @@
+.book {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  transition: all ease-out 0.2s;
+}
+
+.book-img {
+  width: 200px;
+  height: 320px;
+  background-color: gray;
+}
+
+.book-title {
+  font-size: 1.4em;
+}
+
+.book-author {
+  font-size: 0.8em;
+}
+
+.book:hover {
+  transform: scale(1.01);
+}

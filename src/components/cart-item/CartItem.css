@@ -1,0 +1,9 @@
+.cart-item-img {
+  width: 50px;
+  height: 80px;
+  background-color: gray;
+}
+
+.cart-item-title {
+  font-size: 18px;
+}

@@ -1,0 +1,27 @@
+.detail-container {
+  display: flex;
+  font-size: 16px;
+}
+
+.book-img {
+  width: 200px;
+  height: 320px;
+  background-color: gray;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title {
+  font-size: 1.8em;
+}
+
+.book-author {
+  font-size: 0.8em;
+}
+
+.book-desc {
+  font-size: 1em;
+}
