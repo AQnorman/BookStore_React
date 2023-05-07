@@ -1,6 +1,7 @@
 .detail-container {
   display: flex;
   font-size: 16px;
+  justify-content: space-between;
 }
 
 .book-img {

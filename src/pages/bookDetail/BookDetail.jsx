@@ -72,13 +72,13 @@ const BookDetail = () => {
         ) : (
           <>
             <Row>
-              <Col sm={2}>
+              <Col xs={12} md={4} lg={3}>
                 <img
                   src={`http://localhost:8000/uploads/${book.image_path}`}
                   className="book-img"
-                ></img>
+                />
               </Col>
-              <Col sm={10}>
+              <Col xs={12} md={8} lg={9}>
                 <div className="book-info">
                   <div className="book-title">{book.title}</div>
                   <div className="book-author">{book.author}</div>
@@ -105,6 +105,7 @@ const BookDetail = () => {
                 )}
               </Col>
             </Row>
+
             <hr />
             <Row>
               <Col>

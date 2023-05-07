@@ -1,5 +1,5 @@
 .book {
-  width: fit-content;
+  width: 200px;
   display: flex;
   flex-direction: column;
   font-size: 16px;
@@ -14,6 +14,7 @@
 
 .book-title {
   font-size: 1.4em;
+  word-wrap: break-word;
 }
 
 .book-author {
