@@ -3,6 +3,7 @@ import { Navbar, Container, Nav, Button, Stack } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { authService } from "../../auth";
 import { FaUserCircle } from "react-icons/fa";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import Login from "../login/Login";
 
 const NavigationBar = () => {
@@ -21,7 +22,12 @@ const NavigationBar = () => {
   return (
     <>
       <Login show={show} setShow={setShow} />
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        variant="dark"
+        style={{ backgroundColor: "#47026c" }}
+      >
         <Container>
           <Navbar.Brand as={Link} to="/">
             BookStore
@@ -42,7 +48,7 @@ const NavigationBar = () => {
                   <>
                     <Stack direction="horizontal" gap={1}>
                       <Button
-                        variant="primary"
+                        variant="warning"
                         size="sm"
                         onClick={() => {
                           authService.logout();
@@ -57,13 +63,20 @@ const NavigationBar = () => {
                         size="sm"
                         onClick={() => navigate("/profile")}
                       >
-                        <FaUserCircle size={30} />
+                        <FaUserCircle size={30} color="#ffc107" />
+                      </Button>
+                      <Button
+                        variant="link"
+                        size="sm"
+                        onClick={() => navigate("/cart")}
+                      >
+                        <AiOutlineShoppingCart size={30} color="#ffc107" />
                       </Button>
                     </Stack>
                   </>
                 ) : (
                   <Button
-                    variant="primary"
+                    variant="warning"
                     size="sm"
                     onClick={() => setShow(true)}
                   >

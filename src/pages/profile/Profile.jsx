@@ -164,7 +164,7 @@ const Profile = () => {
               </Col>
             </Row>
             <hr />
-            <Row>
+            {/* <Row>
               <Col>
                 <div className="d-flex flex-row mb-3">
                   <div className="display-6 mb-2">My Cart</div>
@@ -198,7 +198,7 @@ const Profile = () => {
                   </div>
                 )}
               </Col>
-            </Row>
+            </Row> */}
             <Row>
               <Col>
                 <div className="display-6 my-3">My Books</div>

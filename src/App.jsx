@@ -5,6 +5,7 @@ import { Footer, Navbar } from "./components";
 import {
   AboutUs,
   BookDetail,
+  Cart,
   ContactUs,
   Feedback,
   Home,
@@ -38,6 +39,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/contact-us" element={<Feedback />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
         <Footer />
       </div>

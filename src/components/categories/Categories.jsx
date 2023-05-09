@@ -26,7 +26,7 @@ const Categories = ({ setCategory }) => {
       ) : (
         <Stack direction="horizontal" gap={2}>
           <Button
-            variant="primary"
+            variant="warning"
             size="sm"
             onClick={() => setCategory("All")}
           >
@@ -36,7 +36,7 @@ const Categories = ({ setCategory }) => {
             return (
               <Button
                 key={category.id}
-                variant="primary"
+                variant="warning"
                 size="sm"
                 onClick={() => setCategory(category.category)}
               >

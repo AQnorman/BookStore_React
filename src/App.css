@@ -1,7 +1,7 @@
 .background-pattern {
   height: 100%;
   width: 100%;
-  background-image: radial-gradient(rgba(0, 0, 0, 0.1) 15%, transparent 1%);
+  background-image: radial-gradient(rgba(6, 6, 6, 0.1) 15%, transparent 1%);
   background-position: 0% 0%;
   background-size: 1.5vmin 1.5vmin;
 

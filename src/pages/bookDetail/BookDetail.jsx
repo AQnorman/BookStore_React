@@ -96,7 +96,7 @@ const BookDetail = () => {
                   </Button>
                 ) : (
                   <Button
-                    variant="primary"
+                    variant="warning"
                     size="sm"
                     onClick={() => addToCart()}
                   >
