@@ -91,9 +91,7 @@ const BookDetail = () => {
                 {currentUser &&
                 userDetail.user.books.filter((b) => b.id === book.id).length >
                   0 ? (
-                  <Button variant="primary" size="sm">
-                    Download Book
-                  </Button>
+                  <></>
                 ) : (
                   <Button
                     variant="warning"
